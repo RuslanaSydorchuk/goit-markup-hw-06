@@ -408,6 +408,10 @@ img {
     background-origin: border-box;
 }
 
+.form-input-confirmation:focus +.form-tick{
+    border-color: #2196F3;
+}
+
 .form-label-confirmation{
     display: block;
     margin: 0;
@@ -422,6 +426,10 @@ img {
 
 .policy{
     color: var(--accent-color);
+}
+
+.policy:hover{
+    text-decoration: none;
 }
 
 .button-submit{
@@ -857,6 +865,9 @@ address li:not(:last-child){
     opacity: 0;
 }
 
+.email-input:not(:placeholder-shown)+.email-label{
+    opacity: 0;
+}
 
 .button-follow{
     display: flex;
